@@ -16,10 +16,10 @@ public class CalculatorController {
     @FXML
     private void handleDigit(ActionEvent event) {
         String digit = ((Button) event.getSource()).getText();
-        System.out.println("Нажата кнопка: " + digit);  // Вывод в консоль
+        System.out.println("The button is pressed: " + digit);  // Вывод в консоль
         currentInput.append(digit);
         display.setText(currentInput.toString());
-        System.out.println("Текущее значение: " + currentInput.toString());  // Проверка текущего значения
+        System.out.println("current answer: " + currentInput.toString());  // Проверка текущего значения
     }
 
 
@@ -52,7 +52,7 @@ public class CalculatorController {
 
     @FXML
     public void initialize() {
-        System.out.println("Контроллер инициализирован");
+        System.out.println("Controller initialized");
     }
 
 }
